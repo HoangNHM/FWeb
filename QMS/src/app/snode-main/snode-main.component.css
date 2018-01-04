@@ -1,14 +1,28 @@
 body {
-  background: #ecf0f1;
+  background: #f16a51;
 }
 
 #hex {
   width: 120px;
   height: 120px;
+  color: #fc354c;
 }
 
 #color {
-  background-color: #d7dd11;
+  background-color: #ff9800;
+}
+
+.text-color {
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  font-size: 14pt;
+  font-weight: bold;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
 }
 
 .hexagon-wrapper {

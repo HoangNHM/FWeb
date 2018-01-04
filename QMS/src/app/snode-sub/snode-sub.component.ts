@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {Node} from '../node';
 
 @Component({
   selector: 'app-snode-sub',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SnodeSubComponent implements OnInit {
 
+  @Input() node: Node;
   constructor() { }
 
   ngOnInit() {

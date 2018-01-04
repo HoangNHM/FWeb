@@ -5,24 +5,3 @@
   bottom: 0;
   top: 0;
 }
-
-.arrow {
-  width:60px;
-}
-
-.line {
-  margin-top:16px;
-  width:40px;
-  background: #000000;
-  vertical-align: middle;
-  height:8px;
-  float:left;
-}
-.point {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #000000;
-  float:right;
-}

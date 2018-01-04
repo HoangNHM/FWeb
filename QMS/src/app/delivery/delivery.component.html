@@ -1,39 +1,26 @@
-<div class="flexbox-parent">
+<div class="flexbox-parent" style="background: linear-gradient(to right, #84FFFF, #00bcd4)">
   <div layout="row" layout-align="center center"  style="height: 100vh">
 
-    <app-node [node]="sales" ></app-node>
-    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
-    <div class="line"></div>
-    <div class="point"></div>
+    <app-node [node]="sales"></app-node>
+    <div align="center">
+      <img class="img-responsive" style="width:60px;height:45px; " src="assets/ic_trending_flat_black_24dp_2x.png">
     </div>
+
     <app-node [node]="contract_management"></app-node>
-    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
-      <div class="line"></div>
-      <div class="point"></div>
+    <div align="center">
+      <img class="img-responsive" style="width:60px;height:45px;" src="assets/ic_trending_flat_black_24dp_2x.png">
     </div>
+
     <app-node [node]="open_project"></app-node>
-    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
-      <div class="line"></div>
-      <div class="point"></div>
+    <div align="center">
+      <img class="img-responsive" style="width:60px;height:45px;" src="assets/ic_trending_flat_black_24dp_2x.png">
     </div>
+
     <app-snode></app-snode>
-    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
-      <div class="line"></div>
-      <div class="point"></div>
+    <div align="center">
+      <img class="img-responsive" style="width:60px;height:45px;" src="assets/ic_trending_flat_black_24dp_2x.png">
     </div>
-    <div>
-      <app-node [node]="customer_support"></app-node>
-    </div>
+
+    <app-node [node]="customer_support"></app-node>
   </div>
 </div>
-
-
-<!--<div style="vertical-align: middle">-->
-
-    <!--<app-node [node]="sales" ></app-node>-->
-    <!--<div class="arrow">-->
-      <!--<div class="line"></div>-->
-      <!--<div class="point"></div>-->
-    <!--</div>-->
-    <!--<app-node [node]="contract_management"></app-node>-->
-<!--</div>-->

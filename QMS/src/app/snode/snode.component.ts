@@ -30,12 +30,17 @@ export class SnodeComponent implements OnInit {
   };
   package: Node = {
     id: 0,
-    name: 'Package Impl',
+    name: 'Package Implementation',
     link: '#ams'
   };
   infra: Node = {
     id: 0,
-    name: 'Infrastructure',
+    name: 'Infrastructure Maintenance',
+    link: '#ams'
+  };
+  cadcae_modeling: Node = {
+    id: 0,
+    name: 'CAD/CAE Modeling',
     link: '#ams'
   };
   constructor() { }

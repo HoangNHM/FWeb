@@ -1,27 +1,31 @@
-<div style="position: relative; width: 500px; margin-left: 0px">
-  <div layout="row" layout-align="center center"  style="height: 100vh">
+<div style="position: relative; width: 500px; height: 500px; margin-right: 15px; margin-left: -10px">
+  <div layout="row" layout-align="center center">
 
-  <div style="margin-left: -50px">
-    <app-node [node]="software"></app-node>
+  <div style="margin-left: 40px">
+    <app-snode-sub [node]="software"></app-snode-sub>
   </div>
-  <div style="position: absolute; top:130px; left: 100px">
-    <app-node [node]="bpo"></app-node>
+  <div style="position: absolute; top:100px; left: 50px">
+    <app-snode-sub [node]="bpo"></app-snode-sub>
   </div>
-  <div style="position: absolute;  top: 470px; left:100px;">
-    <app-node [node]="ams"></app-node>
+  <div style="position: absolute;  top: 230px; left:20px;">
+    <app-snode-sub [node]="ams"></app-snode-sub>
+  </div>
+  <div style="position: absolute;  top: 350px; left:100px;">
+    <app-snode-sub [node]="cadcae_modeling"></app-snode-sub>
   </div>
 
-  <app-snode-main style="position: relative; left: 50px"></app-snode-main>
+  <app-snode-main style="position: absolute; top: 170px; left: 190px"></app-snode-main>
 
-    <div style="position: absolute; left: 410px">
-      <app-node [node]="migration"></app-node>
+    <div style="position: absolute; top:100px; left: 370px">
+      <app-snode-sub [node]="migration"></app-snode-sub>
     </div>
-    <div style="position: absolute; top:130px;left:500px">
-      <app-node [node]="package"></app-node>
+    <div style="position: absolute; top:230px; left:390px">
+      <app-snode-sub [node]="package"></app-snode-sub>
     </div>
-    <div style="position: absolute;  top: 470px; left:400px;">
-      <app-node [node]="infra"></app-node>
+    <div style="position: absolute;  top: 350px; left:310px;">
+      <app-snode-sub [node]="infra"></app-snode-sub>
     </div>
+
 
 </div>
 </div>
