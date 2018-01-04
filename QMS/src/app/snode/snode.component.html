@@ -1,0 +1,27 @@
+<div style="position: relative; width: 500px; margin-left: 0px">
+  <div layout="row" layout-align="center center"  style="height: 100vh">
+
+  <div style="margin-left: -50px">
+    <app-node [node]="software"></app-node>
+  </div>
+  <div style="position: absolute; top:130px; left: 100px">
+    <app-node [node]="bpo"></app-node>
+  </div>
+  <div style="position: absolute;  top: 470px; left:100px;">
+    <app-node [node]="ams"></app-node>
+  </div>
+
+  <app-snode-main style="position: relative; left: 50px"></app-snode-main>
+
+    <div style="position: absolute; left: 410px">
+      <app-node [node]="migration"></app-node>
+    </div>
+    <div style="position: absolute; top:130px;left:500px">
+      <app-node [node]="package"></app-node>
+    </div>
+    <div style="position: absolute;  top: 470px; left:400px;">
+      <app-node [node]="infra"></app-node>
+    </div>
+
+</div>
+</div>

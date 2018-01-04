@@ -1,0 +1,39 @@
+<div class="flexbox-parent">
+  <div layout="row" layout-align="center center"  style="height: 100vh">
+
+    <app-node [node]="sales" ></app-node>
+    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
+    <div class="line"></div>
+    <div class="point"></div>
+    </div>
+    <app-node [node]="contract_management"></app-node>
+    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
+      <div class="line"></div>
+      <div class="point"></div>
+    </div>
+    <app-node [node]="open_project"></app-node>
+    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
+      <div class="line"></div>
+      <div class="point"></div>
+    </div>
+    <app-snode></app-snode>
+    <div class="arrow" style="margin-left: 20px; margin-right: 20px">
+      <div class="line"></div>
+      <div class="point"></div>
+    </div>
+    <div>
+      <app-node [node]="customer_support"></app-node>
+    </div>
+  </div>
+</div>
+
+
+<!--<div style="vertical-align: middle">-->
+
+    <!--<app-node [node]="sales" ></app-node>-->
+    <!--<div class="arrow">-->
+      <!--<div class="line"></div>-->
+      <!--<div class="point"></div>-->
+    <!--</div>-->
+    <!--<app-node [node]="contract_management"></app-node>-->
+<!--</div>-->
