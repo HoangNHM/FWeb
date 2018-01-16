@@ -9,6 +9,8 @@ import { SalesComponent } from './sales/sales.component';
 import { SnodeComponent } from './snode/snode.component';
 import { SnodeMainComponent } from './snode-main/snode-main.component';
 import { SnodeSubComponent } from './snode-sub/snode-sub.component';
+import { HalfCircularMenuComponent } from './half-circular-menu/half-circular-menu.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { SnodeSubComponent } from './snode-sub/snode-sub.component';
     SalesComponent,
     SnodeComponent,
     SnodeMainComponent,
-    SnodeSubComponent
+    SnodeSubComponent,
+    HalfCircularMenuComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule
