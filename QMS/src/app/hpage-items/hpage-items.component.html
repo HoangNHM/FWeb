@@ -1,29 +1,3 @@
-<div style="position: relative; width: 500px; height: 500px; margin-right: 15px; margin-left: -10px">
-
-
-  <div style="margin-left: 40px">
-    <app-hpage-items [node]="cOrganization"></app-hpage-items>
-  </div>
-  <div style="position: absolute; top:100px; left: 50px">
-    <app-hpage-items [node]="finance"></app-hpage-items>
-  </div>
-  <div style="position: absolute;  top: 230px; left:20px;">
-    <app-hpage-items [node]="hResources"></app-hpage-items>
-  </div>
-  <div style="position: absolute;  top: 350px; left:100px;">
-    <app-hpage-items [node]="itManagement"></app-hpage-items>
-  </div>
-
-  <!-- <app-snode-main style="position: absolute; top: 170px; left: 190px"></app-snode-main>
-
-  <div style="position: absolute; top:100px; left: 370px">
-    <app-hpage-items [node]="migration"></app-hpage-items>
-  </div>
-  <div style="position: absolute; top:230px; left:390px">
-    <app-hpage-items [node]="package"></app-hpage-items>
-  </div>
-  <div style="position: absolute;  top: 350px; left:310px;">
-    <app-hpage-items [node]="infra"></app-hpage-items>
-  </div> -->
-
+<div *ngIf="node">
+  <h1><a href="{{node.link}}" class="effect-zoom">{{node.name}}</a></h1>
 </div>
