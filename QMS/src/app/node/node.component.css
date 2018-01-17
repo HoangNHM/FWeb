@@ -107,3 +107,8 @@ a.effect-shine:hover {
     -webkit-mask-position: -50%;
   }
 }
+
+/* effect-zoom */
+a.effect-zoom:hover {
+  transform: scale(1.1);
+}

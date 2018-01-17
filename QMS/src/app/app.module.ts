@@ -11,6 +11,7 @@ import { SnodeMainComponent } from './snode-main/snode-main.component';
 import { SnodeSubComponent } from './snode-sub/snode-sub.component';
 import { HalfCircularMenuComponent } from './half-circular-menu/half-circular-menu.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { HpageItemsComponent } from './hpage-items/hpage-items.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     SnodeMainComponent,
     SnodeSubComponent,
     HalfCircularMenuComponent,
-    HomePageComponent
+    HomePageComponent,
+    HpageItemsComponent
   ],
   imports: [
     BrowserModule
