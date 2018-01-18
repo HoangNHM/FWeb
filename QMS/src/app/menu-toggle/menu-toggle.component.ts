@@ -11,6 +11,7 @@ export class MenuToggleComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit() {
+    const theMenu = document.getElementById('menu').style.display = 'none';
   }
 
   ngAfterViewInit(): void {
