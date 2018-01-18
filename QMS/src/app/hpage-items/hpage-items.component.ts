@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Node} from '../node';
+import { LINE_ITEMS } from '../mock-home-line-items';
 
 @Component({
   selector: 'app-hpage-items',
@@ -8,6 +9,7 @@ import {Node} from '../node';
 })
 export class HpageItemsComponent implements OnInit {
 
+  line_items = LINE_ITEMS;
   @Input() node: Node;
   constructor() { }
 
