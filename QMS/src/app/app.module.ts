@@ -11,6 +11,9 @@ import { SnodeMainComponent } from './snode-main/snode-main.component';
 import { SnodeSubComponent } from './snode-sub/snode-sub.component';
 import { HalfCircularMenuComponent } from './half-circular-menu/half-circular-menu.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { MenuToggleComponent } from './menu-toggle/menu-toggle.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { SoftwareComponent } from './software/software.component';
 
 
 @NgModule({
@@ -23,10 +26,13 @@ import { HomePageComponent } from './home-page/home-page.component';
     SnodeMainComponent,
     SnodeSubComponent,
     HalfCircularMenuComponent,
-    HomePageComponent
+    HomePageComponent,
+    MenuToggleComponent,
+    SoftwareComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

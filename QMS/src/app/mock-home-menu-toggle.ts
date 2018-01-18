@@ -1,6 +1,6 @@
 import {MenuItem} from './menu-item';
 
-export const CIRCULAR_ITEMS: MenuItem[] = [
+export const TOGGLE_ITEMS: MenuItem[] = [
   {id: 6, name: 'Customer Services', nav: 'customer-services'},
   {id: 5, name: 'Delivery Services', nav: 'delivery-services'},
   {id: 4, name: 'Procurement', nav: 'procurement'},
