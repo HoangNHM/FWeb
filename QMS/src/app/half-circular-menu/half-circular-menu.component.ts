@@ -67,9 +67,6 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterCo
       self.y_line_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i])) + self.settings.r3;
       self.x_border_pos[i] = (self.settings.r1 * Math.sin(self.ele_angle[i])) + self.settings.t3;
       self.y_border_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i]) - self.settings.t3);
-      console.log('i ' + i);
-      console.log('x ' + self.x_line_pos[i]);
-      console.log('y ' + self.y_line_pos[i]);
       itemId.css({
         'width': 2 * self.settings.r3 + 'px',
         'height': 2 * self.settings.r3 + 'px',
@@ -101,15 +98,21 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterCo
         'x2': self.settings.r1 - self.settings.r3 + self.y_line_pos[i],
         'y2': self.settings.r1 - self.settings.r3 - self.x_line_pos[i],
       });
-      if (self.y_pos[i] < 0) {
+      // descriptions
+      if (self.y_pos[i] < -10) {
         itemDesc.css({
           'left' : (val === 0) ? 0 : self.y_pos[i] - 170 + 'px',
           'top' : (val === 0) ? 0 : -self.x_pos[i] - 20 + 'px',
         });
-      } else {
+      } else if (self.y_pos[i] > 10) {
         itemDesc.css({
           'left' : (val === 0) ? 0 : self.y_pos[i] + 30 + 'px',
           'top' : (val === 0) ? 0 : -self.x_pos[i] - 20 + 'px',
+        });
+      } else {
+        itemDesc.css({
+          'left' : (val === 0) ? 0 : self.y_pos[i] - 85 + self.settings.r3 + 'px',
+          'top' : (val === 0) ? 0 : -self.x_pos[i] - 35 + 'px',
         });
       }
     });
