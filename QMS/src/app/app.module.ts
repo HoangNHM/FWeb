@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { NodeComponent } from './node/node.component';
 import { SalesComponent } from './sales/sales.component';
-import { SnodeComponent } from './snode/snode.component';
+import { DeliveryServiceHexagonComponent } from './snode/snode.component';
 import { SnodeMainComponent } from './snode-main/snode-main.component';
 import { SnodeSubComponent } from './snode-sub/snode-sub.component';
 import { HalfCircularMenuComponent } from './half-circular-menu/half-circular-menu.component';
@@ -23,7 +23,7 @@ import { SoftwareComponent } from './software/software.component';
     DeliveryComponent,
     NodeComponent,
     SalesComponent,
-    SnodeComponent,
+    DeliveryServiceHexagonComponent,
     SnodeMainComponent,
     SnodeSubComponent,
     HalfCircularMenuComponent,
