@@ -15,6 +15,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MenuToggleComponent } from './menu-toggle/menu-toggle.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { SoftwareComponent } from './software/software.component';
+import { NineMenuComponent } from './nine-menu/nine-menu.component';
+import { NineMenuEleComponent } from './nine-menu-ele/nine-menu-ele.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { SoftwareComponent } from './software/software.component';
     HalfCircularMenuComponent,
     HomePageComponent,
     MenuToggleComponent,
-    SoftwareComponent
+    SoftwareComponent,
+    NineMenuComponent,
+    NineMenuEleComponent
   ],
   imports: [
     BrowserModule,
