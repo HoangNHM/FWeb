@@ -18,10 +18,10 @@ export class DeliveryServiceHexagonComponent implements OnInit {
     name: 'Software',
     nav: 'software'
   };
-  ams: Node = {
+  aspice: Node = {
     id: 0,
-    name: 'AMS',
-    nav: '#ams'
+    name: 'A-SPICE',
+    nav: '#aspice'
   };
   migration: Node = {
     id: 0,
