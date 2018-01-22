@@ -15,7 +15,7 @@ body {
 .outer_container .main {
   z-index: 3;
   position: absolute;
-  background: #428bca;
+  background: #428bca73;
   border-bottom: 0;
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -24,6 +24,15 @@ body {
   cursor: pointer;
   transition: all .1s;
   display: block;
+}
+
+.main .main_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  width: 95%;
 }
 
 .outer_container button:hover { background: #3071a9; }
