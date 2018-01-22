@@ -6,7 +6,7 @@ body {
   z-index: 0;
   position: relative;
   left: 50%;
-  top: 350px;
+  top: 450px;
   width: 10px;
   height: 10px;
   display: block;
@@ -37,7 +37,7 @@ body {
 
 .outer_container button:hover { background: #3071a9; }
 
-.outer_container li .item_id:hover { background: #f18c8f; }
+.outer_container li .item_id:hover { background: #95bbec; transform: scale(1.1)}
 
 .outer_container button:focus { outline: none; }
 
@@ -50,10 +50,12 @@ ul,li {
   z-index: 9;
   position: absolute;
   border-radius: 50%;
-  background: #f16a51;
+  background: #03055e;
 
   text-align: center;
   vertical-align: middle;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .outer_container li .item_border {
@@ -70,17 +72,20 @@ ul,li {
   height: 50px;
   border-radius: 10%;
   background: rgba(255, 255, 255, 0);
-
+  font-size: 20px;
   color: #000000;
   text-align: center;
   vertical-align: middle;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  cursor: default;
 }
 
 .half-circle {
   position: absolute;
   width: 400px;
   height: 200px;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   border-bottom: 0;
 
   -webkit-box-sizing: border-box;

@@ -17,6 +17,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { SoftwareComponent } from './software/software.component';
 import { NineMenuComponent } from './nine-menu/nine-menu.component';
 import { NineMenuEleComponent } from './nine-menu-ele/nine-menu-ele.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { NineMenuEleComponent } from './nine-menu-ele/nine-menu-ele.component';
     MenuToggleComponent,
     SoftwareComponent,
     NineMenuComponent,
-    NineMenuEleComponent
+    NineMenuEleComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

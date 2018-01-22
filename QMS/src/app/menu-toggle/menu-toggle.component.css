@@ -3,9 +3,9 @@
 #toggle {
   position: absolute;
   display: block;
-  width: 50px;
-  height: 50px;
-  margin: 30px 80px;
+  width: 30px;
+  height: 30px;
+  margin: 100px 50px;
 }
 
 #toggle.on + #menu {
@@ -16,15 +16,17 @@
 /* menu appearance*/
 #menu {
   position: absolute;
-  top: 80px;
-  color: #999;
+  top: 150px;
+  left: 20px;
+  color: rgb(255, 255, 255);
   width: 200px;
   padding: 10px;
   margin: auto;
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
   text-align: center;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.29);
+  /* background: rgba(255, 255, 255, 0.29); */
+  background: white;
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
   /* just for this demo */
   opacity: 100;
@@ -39,17 +41,43 @@ ul, li, li a {
 }
 li a {
   padding: 5px;
-  color: #888;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition: all .2s;
+  text-align: left;
 }
 li a:hover,
 li a:focus {
-  background: #1ABC9C;
+  background: #03055e;
   color: #fff;
 }
 
 
 /* demo styles */
 body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
-p, p a { font-size: 12px;text-align: center; color: #888; }
+p, p a { font-size: 12px;text-align: center; color: rgb(0, 0, 0); }
+
+button {
+  display: inline-block;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 50px;
+  top: 0px;
+  left: 0px;
+}
+
+/* menu icon using CSS */
+container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+bar1, bar2, bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
