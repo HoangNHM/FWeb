@@ -15,7 +15,7 @@ body {
 .outer_container .main {
   z-index: 3;
   position: absolute;
-  background: #c2c2c2;
+  background: #7e7e7e;
   border-bottom: 0;
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -76,7 +76,7 @@ ul,li {
   position: absolute;
   width: 400px;
   height: 200px;
-  border: 5px solid #c2c2c2;
+  border: 5px solid #ffffff;
   border-bottom: 0;
 
   -webkit-box-sizing: border-box;
