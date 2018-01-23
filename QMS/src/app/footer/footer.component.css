@@ -5,13 +5,13 @@ body {margin:0;}
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 8%;
+  height: 10%;
   overflow: hidden;
 }
 
 .navbar a {
   float: right;
-  display: inline-block;
+  display: grid;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
