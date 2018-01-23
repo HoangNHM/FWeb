@@ -50,7 +50,7 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit {
       'height': self.settings.r2 + 'px',
       'border-top-left-radius': self.settings.r2 + 'px',
       'border-top-right-radius': self.settings.r2 + 'px',
-      'left': -self.settings.r2 + self.settings.r3 + 'px',
+      'left': -self.settings.r2 + self.settings.r3 - self.settings.r3 + 'px',
       'top': -self.settings.r2 + self.settings.r3 + 'px',
     });
     $('.outer_container ul li').each(function (i, element) {
@@ -61,11 +61,11 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit {
       const itemDesc = elm.find('.item_desc');
       self.ele_angle[i] = (self.settings.starting_angel + self.angle * (i)) * Math.PI / 180;
       self.x_pos[i] = (self.settings.r1 * Math.sin(self.ele_angle[i]));
-      self.y_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i]));
+      self.y_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i]) - self.settings.r3);
       self.x_line_pos[i] = (self.settings.r1 * Math.sin(self.ele_angle[i])) - self.settings.r3;
       self.y_line_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i])) + self.settings.r3;
       self.x_border_pos[i] = (self.settings.r1 * Math.sin(self.ele_angle[i])) + self.settings.t3;
-      self.y_border_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i]) - self.settings.t3);
+      self.y_border_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i]) - self.settings.t3 - self.settings.r3);
       itemId.css({
         'width': 2 * self.settings.r3 + 'px',
         'height': 2 * self.settings.r3 + 'px',
@@ -94,7 +94,7 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit {
         'width': 2 * self.settings.r1 + 'px',
         'height': self.settings.r1 + 4 + 'px',
         'top' : ((val === 0) ? 0 : -self.settings.r1 + self.settings.r3) + 'px',
-        'left' : ((val === 0) ? 0 : -self.settings.r1 + self.settings.r3) + 'px',
+        'left' : ((val === 0) ? 0 : -self.settings.r1 + self.settings.r3 - self.settings.r3) + 'px',
       });
       itemLiner.find('line').attr({
         'x1': self.settings.r1 + (self.settings.r4 - 5) * Math.cos(self.ele_angle[i]),
@@ -130,7 +130,7 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit {
       'border-top-left-radius': self.settings.r1 + 'px',
       'border-top-right-radius': self.settings.r1 + 'px',
       'top': -self.settings.r1 + self.settings.r3 + 'px',
-      'left': -self.settings.r1 + self.settings.r3 + 'px',
+      'left': -self.settings.r1 + 'px',
       'z-index': 1,
     });
     $('#c2').css({
@@ -139,7 +139,7 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit {
       'border-top-left-radius': self.settings.r4 + 'px',
       'border-top-right-radius': self.settings.r4 + 'px',
       'top': -self.settings.r4 + self.settings.r3 + 'px',
-      'left': -self.settings.r4 + self.settings.r3 + 'px',
+      'left': -self.settings.r4 + 'px',
       'z-index': 9,
     });
     $('#c3').css({
@@ -149,7 +149,7 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit {
       'border-top-right-radius': self.settings.r2 + this.settings.r22 + 'px',
       'border': self.settings.r22 + 'px solid white',
       'border-bottom': 0,
-      'left': -self.settings.r2 - this.settings.r22 + self.settings.r3 + 'px',
+      'left': -self.settings.r2 - this.settings.r22 + 'px',
       'top': -self.settings.r2 - this.settings.r22 + self.settings.r3 + 'px',
       'z-index': 9,
     });
