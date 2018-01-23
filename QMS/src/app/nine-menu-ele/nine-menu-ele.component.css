@@ -22,7 +22,9 @@ h1 .effect-zoomin {
   transition: all 0.1s linear;
 }
 h1 .effect-zoomin:hover {
-  height: 90px;
-  width: 260px;
-  font-size: 15pt;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
