@@ -1,4 +1,4 @@
-export class Node {
+export class MenuItem {
   id: number;
   name: string;
   nav: string;

@@ -1,0 +1,28 @@
+h1 a {
+  color: #FFFFFF;
+  border-radius: 5px;
+  background: #03055e;
+  padding: 3px;
+  /*border: 0 solid;*/
+  height: 80px;
+  width: 250px;
+  text-align: center;
+  display: table-cell;
+  font-size: 14pt;
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+}
+
+h1 .effect-zoomin {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+h1 .effect-zoomin:hover {
+  height: 90px;
+  width: 260px;
+  font-size: 15pt;
+}

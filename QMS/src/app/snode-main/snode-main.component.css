@@ -9,7 +9,7 @@ body {
 }
 
 #color {
-  background-color: #ff9800;
+  background-color: #03055e;
 }
 
 .text-color {
@@ -23,6 +23,16 @@ body {
   top: 50%;
   transform: translateY(-50%);
   margin: 0;
+}
+
+.effect-zoomin {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.effect-zoomin:hover {
+  font-size: 15pt;
 }
 
 .hexagon-wrapper {

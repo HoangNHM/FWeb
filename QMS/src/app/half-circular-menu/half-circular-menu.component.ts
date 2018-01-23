@@ -1,13 +1,13 @@
-import {Component, OnInit, Input, AfterViewInit, AfterContentInit} from '@angular/core';
+import {Component, OnInit, AfterViewInit} from '@angular/core';
 import {CIRCULAR_ITEMS} from '../mock-home-circular-items';
-import * as $ from 'jquery';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-half-circular-menu',
   templateUrl: './half-circular-menu.component.html',
   styleUrls: ['./half-circular-menu.component.css'],
 })
-export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterContentInit {
+export class HalfCircularMenuComponent implements OnInit, AfterViewInit {
   circular_items = CIRCULAR_ITEMS;
   angle;
   delay_time;
@@ -32,14 +32,13 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterCo
     // 'starting_angel': 0 - (360 * 50) / (2 * Math.PI * 300) / 2,
     // 'angel_difference': 180 + (360 * 50) / (2 * Math.PI * 300),
   };
-  constructor() {
+  constructor(private router: Router) {
   }
   ngOnInit() {
     this.angle = this.settings.angel_difference / (this.settings.menu_element.length - 1);
   }
-  ngAfterContentInit() {
-  }
   ngAfterViewInit() {
+    const self = this;
     this.setPosition(1);
     this.drawExtra();
   }
@@ -67,9 +66,6 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterCo
       self.y_line_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i])) + self.settings.r3;
       self.x_border_pos[i] = (self.settings.r1 * Math.sin(self.ele_angle[i])) + self.settings.t3;
       self.y_border_pos[i] = (self.settings.r1 * Math.cos(self.ele_angle[i]) - self.settings.t3);
-      console.log('i ' + i);
-      console.log('x ' + self.x_line_pos[i]);
-      console.log('y ' + self.y_line_pos[i]);
       itemId.css({
         'width': 2 * self.settings.r3 + 'px',
         'height': 2 * self.settings.r3 + 'px',
@@ -81,6 +77,10 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterCo
         '-o-transform': 'rotate(' + (90 - self.ele_angle[i] * 180 / Math.PI) + 'deg)',
         'transform': 'rotate(' + (90 - self.ele_angle[i] * 180 / Math.PI) + 'deg)',*/
         'line-height': 2 * self.settings.r3 + 'px',
+        'z-index': 10,
+      });
+      itemId.click(function () {
+        self.router.navigate([self.circular_items[i].nav]);
       });
       itemBorder.css({
         'width': 2 * self.settings.r3 + 'px',
@@ -88,6 +88,7 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterCo
         'top' : ((val === 0) ? 0 : -self.x_border_pos[i]) + 'px',
         'left' : ((val === 0) ? 0 : self.y_border_pos[i]) + 'px',
         'border': self.settings.t3 + 'px solid white',
+        'z-index': 9,
       });
       itemLiner.css({
         'width': 2 * self.settings.r1 + 'px',
@@ -101,15 +102,21 @@ export class HalfCircularMenuComponent implements OnInit, AfterViewInit, AfterCo
         'x2': self.settings.r1 - self.settings.r3 + self.y_line_pos[i],
         'y2': self.settings.r1 - self.settings.r3 - self.x_line_pos[i],
       });
-      if (self.y_pos[i] < 0) {
+      // descriptions
+      if (self.y_pos[i] < -10) {
         itemDesc.css({
           'left' : (val === 0) ? 0 : self.y_pos[i] - 170 + 'px',
           'top' : (val === 0) ? 0 : -self.x_pos[i] - 20 + 'px',
         });
-      } else {
+      } else if (self.y_pos[i] > 10) {
         itemDesc.css({
           'left' : (val === 0) ? 0 : self.y_pos[i] + 30 + 'px',
           'top' : (val === 0) ? 0 : -self.x_pos[i] - 20 + 'px',
+        });
+      } else {
+        itemDesc.css({
+          'left' : (val === 0) ? 0 : self.y_pos[i] - 85 + self.settings.r3 + 'px',
+          'top' : (val === 0) ? 0 : -self.x_pos[i] - 35 + 'px',
         });
       }
     });

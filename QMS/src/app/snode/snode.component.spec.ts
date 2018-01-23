@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SnodeComponent } from './snode.component';
+import { DeliveryServiceHexagonComponent } from './snode.component';
 
-describe('SnodeComponent', () => {
-  let component: SnodeComponent;
-  let fixture: ComponentFixture<SnodeComponent>;
+describe('DeliveryServiceHexagonComponent', () => {
+  let component: DeliveryServiceHexagonComponent;
+  let fixture: ComponentFixture<DeliveryServiceHexagonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SnodeComponent ]
+      declarations: [ DeliveryServiceHexagonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SnodeComponent);
+    fixture = TestBed.createComponent(DeliveryServiceHexagonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
