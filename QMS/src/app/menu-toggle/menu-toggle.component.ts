@@ -19,6 +19,7 @@ export class MenuToggleComponent implements OnInit, AfterViewInit {
     const theToggle = document.getElementById('toggle');
     const theMenu = document.getElementById('menu');
     theToggle.onclick = function() {
+      this.classList.toggle('change');
       if (theMenu.style.display === 'none') {
         theMenu.style.display = 'block';
       } else {
@@ -26,38 +27,4 @@ export class MenuToggleComponent implements OnInit, AfterViewInit {
       }
     };
   }
-
-/*// hasClass
-  hasClass(elem, className) {
-    return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-  }
-// addClass
-  addClass(elem, className) {
-    if (!this.hasClass(elem, className)) {
-      elem.className += ' ' + className;
-    }
-  }
-// removeClass
-  removeClass(elem, className) {
-    let newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-    if (this.hasClass(elem, className)) {
-      while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-        newClass = newClass.replace(' ' + className + ' ', ' ');
-      }
-      elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    }
-  }
-// toggleClass
-  toggleClass(elem, className) {
-    let newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ' ) + ' ';
-    if (this.hasClass(elem, className)) {
-      while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-        newClass = newClass.replace( ' ' + className + ' ' , ' ' );
-      }
-      elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    } else {
-      elem.className += ' ' + className;
-    }
-  }*/
-
 }
