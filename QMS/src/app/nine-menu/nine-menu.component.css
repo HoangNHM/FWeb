@@ -1,10 +1,27 @@
 .wrapper {
   margin-top: 500px;
 }
+.menu1 > ul {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 530px;
+}
 
-.menu ul > li {
+.menu2 > ul {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 650px;
+}
+
+ul > li {
   list-style: none;
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
+}
+ul {
+  padding-left: 0;
+  text-align: center;
 }
