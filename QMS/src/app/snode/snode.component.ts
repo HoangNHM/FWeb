@@ -13,10 +13,10 @@ export class DeliveryServiceHexagonComponent implements OnInit {
     name: 'BPO',
     nav: '#bpo'
   };
-  software: Node = {
+  engineering: Node = {
     id: 0,
-    name: 'Software',
-    nav: 'software'
+    name: 'Engineering',
+    nav: 'engineering'
   };
   aspice: Node = {
     id: 0,
@@ -43,6 +43,8 @@ export class DeliveryServiceHexagonComponent implements OnInit {
     name: 'CAD/CAE Modeling',
     nav: '#ams'
   };
+  delivery_service: Node = {id: 1, name: 'Delivery Service', nav: 'delivery'};
+
   constructor() { }
 
   ngOnInit() {

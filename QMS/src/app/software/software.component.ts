@@ -9,12 +9,13 @@ import {Node} from '../node';
 export class SoftwareComponent implements OnInit {
   nodes: Node[] = [
     {id: 1, name: 'Standard', nav: 'standard'},
+    {id: 6, name: 'Staff Augmentation', nav: 'staff-augmentation'},
+    {id: 5, name: 'Maintenance', nav: 'maintenance'},
     {id: 2, name: 'Light', nav: 'light'},
     {id: 3, name: 'Very Light', nav: 'very-light'},
     {id: 4, name: 'Scrum', nav: 'scrum'},
-    {id: 5, name: 'Maintenance', nav: 'maintenance'},
-    {id: 6, name: 'Staff Augmentation', nav: 'staff-augmentation'},
   ];
+  engineering: Node = {id: 1, name: 'Engineering', nav: 'engineering'};
   constructor() { }
 
   ngOnInit() {
