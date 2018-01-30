@@ -13,9 +13,9 @@ body {
 }
 
 h1 a {
-  color: #FFFFFF;
+  color: #000;
   border-radius: 5px;
-  background: rgb(89, 184, 248);
+  background: #fdd835   ;
   margin: 15px;
   padding: 3px;
   border-style: solid;

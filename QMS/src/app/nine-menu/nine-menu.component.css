@@ -1,5 +1,8 @@
 .wrapper {
   margin-top: 500px;
+  position: relative;
+  left: 0%;
+
 }
 .menu1 > ul {
   left: 0;

@@ -5,7 +5,7 @@ body {
 .outer_container {
   z-index: 0;
   position: relative;
-  left: 50%;
+  left: 49%;
   top: 450px;
   width: 10px;
   height: 10px;
@@ -37,7 +37,7 @@ body {
 
 .outer_container button:hover { background: #3071a9; }
 
-.outer_container li .item_id:hover { background: #95bbec; transform: scale(1.1)}
+.outer_container li .item_id:hover { background: #f9a825; transform: scale(1.1)}
 
 .outer_container button:focus { outline: none; }
 
@@ -50,7 +50,7 @@ ul,li {
   z-index: 9;
   position: absolute;
   border-radius: 50%;
-  background: #03055e;
+  background: #f9a825 ;
 
   text-align: center;
   vertical-align: middle;

@@ -51,7 +51,7 @@
   text-align: center;
   border-radius: 4px;
   /* background: rgba(255, 255, 255, 0.29); */
-  background: white;
+  background: #fff9c4;
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
   /* just for this demo */
   opacity: 100;
@@ -73,8 +73,8 @@ li a {
 }
 li a:hover,
 li a:focus {
-  background: #03055e;
-  color: #fff;
+  background: #ffea00;
+  color: #000;
 }
 
 

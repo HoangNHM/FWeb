@@ -9,11 +9,11 @@ body {
 }
 
 #color {
-  background-color: #03055e;
+  background-color: #f9a825;
 }
 
 .text-color {
-  color: #FFFFFF;
+  color: #000;
   position: absolute;
   z-index: 1;
   font-size: 14pt;
